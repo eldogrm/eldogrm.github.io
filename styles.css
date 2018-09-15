@@ -1,0 +1,117 @@
+/*======*/
+/* Root */
+/*======*/
+
+:root{
+	--font: "Roboto", "Segoe UI", sans-serif;
+	--monofont : "Roboto Mono", "Consolas", monospace;
+	--colorfg : #EEEEEE;
+	--colorbg1: #101010;
+	--colorbg2: #202020;
+	--colorbg3: #303030;
+	--colora1 : #F27E90;
+}
+
+/*================*/
+/* General Styles */
+/*================*/
+
+body{
+	font-family: var(--font); 
+	background : var(--colorbg1);
+	color : var(--colorfg); 
+	/* in Chrome's default CSS but not in other browsers */
+	margin: 8px; }
+
+#centerbox {
+	margin: auto;
+	position: relative;
+	padding: 20px;
+	border-radius: 10px;
+	background: var(--colorbg2);
+	overflow: auto; 
+}
+
+@media (min-width: 840px) {
+	#centerbox {
+		width: 60%;
+	}
+}
+
+/*========*/
+/* Header */
+/*========*/
+
+.header{
+	font-family: var(--monofont);
+	margin: 0;  }
+
+/*==========*/
+/* Link Box */
+/*==========*/
+
+.linkbox-container {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap; }
+
+.linkbox {
+	/* non-static position needed for absolute positioning */
+	position: relative;
+	transition-property: border-radius;
+	transition-duration: 300ms;
+	border-radius: 5px;
+	background: var(--colorbg3);
+	overflow: hidden;
+	margin: 10px 0 10px 0;
+	width: calc(50% - 10px); }
+
+.linkbox:nth-child(odd) {
+	margin-right: 10px; }
+
+.linkbox:nth-child(even) {
+	margin-left: 10px; }
+
+.linkbox:hover {
+	border-radius: 25px; }
+
+/* to maintain 16:9 ratio */
+.linkbox::before {
+	content: "";
+	width: 1px;
+	margin-left: -1px;
+	float: left;
+	height: 0;
+	padding-top: calc(9 / 16 * 100%); }
+.linkbox::after { /* to clear float */
+	content: "";
+	display: table;
+	clear: both; }	
+
+.linkboximg {
+	transition-property: filter;
+	transition-duration: 300ms;
+	height : 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1.1); }
+
+.linkbox:hover .linkboximg{
+	filter: blur(5px) brightness(0.75); }
+
+.linkboxtxt{
+	transition-property: opacity;
+	transition-duration: 300ms;
+	opacity: 0;
+	font-size: 24px; 
+	color: var(--colorfg);
+	z-index : 1; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); }
+
+.linkbox:hover .linkboxtxt{
+	opacity: 1; }
