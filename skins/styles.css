@@ -33,11 +33,19 @@ html{
 	background: var(--colorbg2);
 	overflow: auto; }
 
+#toindex{
+	position: absolute;
+	padding : 28px 28px;
+	top  : 1rem;
+	left : 1rem;
+	color: var(--colorfg); }
+
 a{
 	color: var(--colora1); }
 
-#commentsheader{
-	margin-bottom: 0px; }
+::selection{
+	background: var(--colora1);
+	color: var(--colorfg); }
 
 @media (max-width: 840px) {
 	#centerbox {

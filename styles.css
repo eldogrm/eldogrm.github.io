@@ -31,12 +31,36 @@ html{
 	padding: 20px;
 	border-radius: 10px;
 	background: var(--colorbg2);
-	overflow: auto; 
-}
+	overflow: auto; }
+
+#toindex{
+	position: absolute;
+	padding : 28px 28px;
+	top  : 1rem;
+	left : 1rem;
+	color: var(--colorfg); }
+
+a{
+	color: var(--colora1); }
+
+::selection{
+	background: var(--colora1);
+	color: var(--colorfg); }
+
+#horizalign{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: left;
+	line-height: 0rem;
+	margin: -0.5rem 1rem 0 0; }
 
 @media (max-width: 840px) {
 	#centerbox {
 		width: auto; }
+	#toindex {
+		display: none; }
 	html{
 		font-size: 12px; }
 }
@@ -126,3 +150,16 @@ p{
 
 .linkbox:hover .linkboxtxt{
 	opacity: 1; }
+
+/*========*/
+/* Footer */
+/*========*/
+
+.footer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	line-height: 0em;
+	margin-top: 0.5em; }
