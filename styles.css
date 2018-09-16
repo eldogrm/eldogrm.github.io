@@ -109,7 +109,7 @@ p{
 	margin-left: 10px; }
 
 .linkbox:hover {
-	border-radius: 20px; }
+	border-radius: 10px; }
 
 /* to maintain 16:9 ratio */
 .linkbox::before {
