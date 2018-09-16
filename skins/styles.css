@@ -33,6 +33,9 @@ html{
 	background: var(--colorbg2);
 	overflow: auto; }
 
+	a{
+		color: var(--colora1); }
+
 @media (max-width: 840px) {
 	#centerbox {
 		width: auto; }
@@ -43,6 +46,11 @@ html{
 /*========*/
 /* Header */
 /*========*/
+
+.header{
+	font-family: var(--monofont);
+	font-size  : 2rem; 
+	margin: 0;  }
 
 .linkbox {
 	/* non-static position needed for absolute positioning */
