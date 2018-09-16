@@ -31,8 +31,7 @@ html{
 	padding: 20px;
 	border-radius: 10px;
 	background: var(--colorbg2);
-	overflow: auto; 
-}
+	overflow: auto; }
 
 @media (max-width: 840px) {
 	#centerbox {
@@ -45,24 +44,6 @@ html{
 /* Header */
 /*========*/
 
-.header{
-	font-family: var(--monofont);
-	font-size  : 2rem; 
-	margin: 0;  }
-
-p{
-	font-size: 1rem; }
-
-/*============*/
-/* Link Boxes */
-/*============*/
-
-.linkbox-container {
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	flex-wrap: wrap; }
-
 .linkbox {
 	/* non-static position needed for absolute positioning */
 	position: relative;
@@ -71,16 +52,10 @@ p{
 	border-radius: 5px;
 	overflow: hidden;
 	margin: 10px 0 10px 0;
-	width: calc(50% - 10px); }
-
-.linkbox:nth-child(odd) {
-	margin-right: 10px; }
-
-.linkbox:nth-child(even) {
-	margin-left: 10px; }
+	width: 100%; }
 
 .linkbox:hover {
-	border-radius: 20px; }
+	border-radius: 10px; }
 
 /* to maintain 16:9 ratio */
 .linkbox::before {
@@ -95,10 +70,6 @@ p{
 	content: "";
 	display: table;
 	clear: both; }
-
-/*================*/
-/* Link Box Image */
-/*================*/
 
 .linkboximg {
 	transition-property: filter;
@@ -126,3 +97,23 @@ p{
 
 .linkbox:hover .linkboxtxt{
 	opacity: 1; }
+
+/*=========================*/
+/* Variables/Settings List */
+/*=========================*/
+
+li{
+	transition-property: background-color;
+	transition-duration: 100ms ;
+	background-color: var(--colorb2);
+	border-radius: 5px;
+	margin: 1rem 0 1rem 0; }
+
+li:hover{
+	background-color: var(--colorb3); }
+
+code{
+	background: var(--colorbg3);
+	font-family: var(--monofont);
+	border-radius: 3px;
+	padding: 0 0.25em 0 0.25em; }
