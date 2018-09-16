@@ -49,7 +49,14 @@ a{
 
 @media (max-width: 840px) {
 	#centerbox {
-		width: auto; }
+		width: auto }
+	#toindex {
+		position: sticky;
+		padding : 28px 18px 18px 18px;
+		background-color: var(--colorbg3);
+		opacity: 0.8;
+		border-radius: 10px;
+		z-index: 1; }
 	html{
 		font-size: 12px; }
 }
