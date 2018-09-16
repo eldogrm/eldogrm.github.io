@@ -131,6 +131,9 @@ li{
 li:hover{
 	background-color: var(--colorb3); }
 
+.requirements{
+	color: var(--colora1); }
+
 code{
 	background: var(--colorbg3);
 	font-family: var(--monofont);
