@@ -33,8 +33,11 @@ html{
 	background: var(--colorbg2);
 	overflow: auto; }
 
-	a{
-		color: var(--colora1); }
+a{
+	color: var(--colora1); }
+
+#commentsheader{
+	margin-bottom: 0px; }
 
 @media (max-width: 840px) {
 	#centerbox {
