@@ -20,6 +20,9 @@ html{
 	font-family: var(--font);
 	font-size  : 16px;
 	background: var(--colorbg1);
+	/* DIYDIYDIYDIYDIYDIYDIYDIYDIYDIYDIYDIYDIYDIYDIYDIY*/
+	background-image: url("./images/diy.png");
+	background-size : 80px 40px;
 	color : var(--colorfg); 
 	/* in Chrome's default CSS but not in other browsers */
 	margin: 8px; }
