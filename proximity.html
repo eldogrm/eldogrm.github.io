@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proximity</title>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<!-- Local Links -->
+	<link rel="icon" type="image/png" href="../favicon.png">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Open Graph Protocol -->
+    <meta property="og:title" content="Proximity" />
+	<meta property="og:description" content="One of the first skins to use Khanhas' MagickMeter plugin, this skin is able to easily blur and manipulate album art." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eldogrm.github.io/skins/proximity.html" />
+	<meta property="og:image" content="https://eldogrm.github.io/images/thumbnails/proximity.png" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="450" />
+</head>
+
+<body>
+	<a id="toindex" href="../index.html">
+		<svg width="24" height="24">
+			<path d="M0 0h24v24H0z" fill="none"/>
+			<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" style="fill: var(--colora1)"/>
+		</svg>
+	</a>
+	<div id="centerbox">
+		<h1 class="header"><u>Proximity</u></h1>
+		<div class="linkbox">
+			<a href="../downloads/proximity.rmskin">
+				<b class="linkboxtxt">Download</b>
+				<img class="linkboximg" src="../images/proximity.png">
+			</a>
+		</div>
+		<p>One of the first skins to use Khanhas' <a href="https://github.com/khanhas/MagickMeter">MagickMeter</a> plugin, this skin is able to easily blur and manipulate album art.</p>
+		<h2 class="requirements">Requirements:</h2>
+		<ul>
+			<li class="requirements"><a href="https://github.com/khanhas/MagickMeter#how-to-install">ImageMagick</a></li>
+			<li class="requirements"><a href="https://chrome.google.com/webstore/detail/webnowplaying-companion/jfakgfcdgpghbbefmdfjkbdlibjgnbli">WebNowPlaying Companion</a> (Only required for WebNowPlaying)</li>
+			<li class="requirements"><a href="https://github.com/khanhas/Spicetify#how-to-use">Spicetify</a> (Set player to "Web" to use— <b>not</b> Spotify)</li>
+		</ul>
+		<h2>Variables:</h2>
+		<ul>
+			<li><code>Plugin</code> - Changes the current plugin fetching music information</li>
+			<li><code>Player</code> - Changes the current player for the NowPlaying plugin</li>
+			<li><code>Cover</code> <b>(Boolean)</b> - Determines whether to show the cover</li>
+			<li><code>Full</code> <b>(Boolean)</b> - Determines whether to show the uncropped cover</li>
+			<li><code>Ctrls</code> <b>(Boolean)</b> - Determines whether to show the music controls</li>
+			<li><code>Color</code> - Changes the foreground color</li>
+			<li><code>Round</code> <b>(Boolean)</b> - Determines whether to round the skin's corners</li>
+			<li><code>Scale</code> - Changes the skin's overall size</li>
+			<li><code>Font</code> - Changes the skin's font</li>
+			<li><code>Vis</code> <b>(Boolean)</b> - Determines whether to show the visualizer</li>
+			<li><code>BarH</code> - Changes the max height of the bars</li>
+			<li><code>BarW</code> - Changes the width of the bars</li>
+		</ul>
+		<h2>Known Bugs:</h2>
+		<ul>
+			<li>None</li>
+		</ul>
+
+		<!-- Disqus -->
+
+		<div id="disqus_thread"></div>
+		<script>
+			var disqus_config = function () {
+			this.page.url = "https://eldogrm.github.io/skins/proximity.html";  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = proximity; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://eldogrm.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<div>
+</body>
+</html>
